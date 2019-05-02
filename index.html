@@ -1,0 +1,46 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="javascript/script.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="box a">Rock !!! Paper !!! Scissors!!!</div>
+	<div class="box b">
+		Computer
+		<div>&nbsp;</br></div>
+		<div id="compChoice"></div>	
+	</div>
+  <div class="box c">
+		<div id="countdown"></div>
+		<div id="result"></div>
+  </div>
+  <div class="box d">
+		Player
+		<div id="playChoice"></div>
+		<div id="playerselection">
+			<input type="radio" id="rock" name="radio" value="1" onchange="checkvalue()"> Rock
+			<input type="radio" id="paper" name="radio" value="2" onchange="checkvalue()"> Paper
+			<input type="radio" id="scissors" name="radio" value="3" onchange="checkvalue()"> Scissors  
+		</div>
+		<div id="playerImage"></div>
+	</div>
+	<div class="box e">
+		<div>Computer Score</div>
+		<div id="compScore">0</div>
+	</div>
+  <div class="box f">
+		<button id="play" onclick="setTimeout(play, 3000); countDown();" disabled>Play</button>
+		<button id="reset" onclick="reset()">Reset</button>
+	</div>
+	<div class="box g">
+			<div>Player Score</div>
+			<div id="playScore">0</div>
+	</div>
+	
+	<div class="box h" id="h">
+		<div id="i"></div>	
+	</div>
+</body>
+</html>
